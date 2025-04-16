@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <header
+        style="display: flex; align-items: center; justify-content: center; padding: 20px; background-color: #fff5f2; border-bottom: 1px solid #ffd9cc;">
+        <img src="festora_logo.png" alt="Festora Logo" style="height: 60px; margin-right: 15px;">
+        <h1 style="font-family: 'Georgia', cursive; font-size: 28px; color: #4b2e2e;">Festora</h1>
+        <link href="style.css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </header>
+  <title>Wedding Detail Section</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #fce4df;
+      background-image: url('/Screenshot 2025-04-12 203724.png'); /* Replace with your image path */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      font-family: 'Georgia', serif;
+      color: #f3f6f6;
+    }
+
+    .details-section {
+      text-align: center;
+      padding: 35px 20px;
+    }
+
+    .details-section h2 {
+      font-size: 2.4rem;
+      margin-bottom: 50px;
+      color: #f0f3f0;
+    }
+
+    .cards-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 60px;
+      box-sizing: border-box;
+    }
+
+    .card {
+      width: 200px;
+      text-align: center;
+    }
+
+    .image-arch {
+        width: 210px;
+        height: 240px;
+        border-radius: 50% 50% 0 0;
+        overflow: hidden;
+        border: 3px solid #f9fcfa;
+      /* width: 100%;
+      aspect-ratio: 3/4;
+      overflow: hidden;
+      clip-path: path("M0,100 Q100,0 200,100 V300 H0 Z"); /* fallback if border-radius fails */
+      /* border: 3px solid #d94f33;
+      border-top-left-radius: 100px;
+      border-top-right-radius: 100px;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      margin-bottom: 20px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); */ 
+    }
+
+    .image-arch img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      /* display: block; */
+    }
+
+    .label {
+      font-size: 0.9 rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #f7f3f3;
+      letter-spacing: 0.5px;
+    }
+
+    .desc {
+      font-size: 1rem;
+      color: #ffffff;
+      margin-top: 5px;
+    }
+    .schedule-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.left-schedule {
+  text-align: center;
+}
+
+.event-title {
+  font-size: 28px;
+  font-family: 'Georgia', cursive;
+  color: #f6caca;
+  margin-bottom: 20px;
+}
+
+.schedule-img {
+  width: 300px;
+  height: 400px;
+}
+
+.right-schedule {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 400px;
+}
+
+.event-block {
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 10px 20px;
+  border-radius: 15px;
+}
+
+.event-time {
+  font-weight: bold;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.event-name {
+  font-weight: bold;
+  font-size: 18px;
+  color: #ffffff;
+  margin: 5px 0;
+}
+
+.event-desc {
+  font-size: 14px;
+  color: #f0f0f0;
+}
+  </style>
+</head>
+<body>
+  <section class="details-section">
+    <h2>Bear witness to<br>their special day</h2>
+    
+    <div class="cards-container">
+
+      <!-- WHEN CARD -->
+      <div class="card">
+        <div class="image-arch">
+          <img src="https://th.bing.com/th/id/OIP.V3GFt7TuDeZDPsN3FfiFBwHaE8?rs=1&pid=ImgDetMain" alt="When">
+        </div>
+        <p class="label">WHEN:</p>
+        <p class="desc">6 June, 2025 at 5:00 PM</p>
+      </div>
+
+      <!-- WHERE CARD -->
+      <div class="card">
+        <div class="image-arch">
+          <img src="https://th.bing.com/th/id/OIP.tTOEYN7hYKcWPwDxNomDrQHaE7?rs=1&pid=ImgDetMain" alt="Where">
+        </div>
+        <p class="label">WHERE:</p>
+        <p class="desc">Sekhon Events Place</p>
+      </div>
+
+      <!-- WHAT TO WEAR CARD -->
+      <div class="card">
+        <div class="image-arch">
+          <img src="https://i.pinimg.com/originals/04/56/da/0456daeebf0590cc71fdcf9aa7fe7885.jpg" alt="What to Wear">
+        </div>
+        <p class="label">WHAT TO WEAR:</p>
+        <p class="desc">Formal or Cocktail Attire</p>
+      </div>
+    </div>
+  </section>
+  <section class="details-section">
+    <h2>Event Schedule</h2>
+    <div class="schedule-container">
+      
+      <!-- Left Illustration + Heading -->
+      <div class="left-schedule">
+        <h3 class="event-title">Event Schedule</h3>
+        <img src="https://i.pinimg.com/736x/de/01/94/de0194641014eceb8a3f9ec92d6a0ddf.jpg" alt="Decorative Table" class="schedule-img">
+      </div>
+  
+      <!-- Right Event Timings -->
+      <div class="right-schedule">
+        <div class="event-block">
+          <div class="event-time">2:00 PM</div>
+          <div class="event-name">GETTING READY PHOTO SHOOT</div>
+          <div class="event-desc">Short overview of the event with summarized details</div>
+        </div>
+        <div class="event-block">
+          <div class="event-time">3:30 PM</div>
+          <div class="event-name">RENEWAL OF VOWS</div>
+          <div class="event-desc">Short overview of the event with summarized details</div>
+        </div>
+        <div class="event-block">
+          <div class="event-time">4:30 PM</div>
+          <div class="event-name">COCKTAIL HOUR</div>
+          <div class="event-desc">Short overview of the event with summarized details</div>
+        </div>
+        <div class="event-block">
+          <div class="event-time">5:30 PM</div>
+          <div class="event-name">RECEPTION AND FESTIVITIES</div>
+          <div class="event-desc">Short overview of the event with summarized details</div>
+        </div>
+      </div>
+  
+    </div>
+  </section>  
+</body>
+</html>

@@ -1,0 +1,135 @@
+/* Reset and fonts */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    font-family: 'Marcellus', serif;
+    height: 100%;
+    width: 100%;
+  }
+  
+  /* Container layout */
+  .container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  /* Left side */
+  .left-side {
+    flex: 1;
+    background-image: url('/downloadcrop.png'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    padding: 50px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .brand {
+    font-size: 75px;
+    letter-spacing: 2px;
+    font-family: 'Marcellus', serif;
+  }
+  
+  .tagline {
+    font-size: 25px;
+    margin-top: 15px;
+    font-family: 'Marcellus', cursive;
+  }
+  
+  /* Right side */
+  .right-side {
+    flex: 0.5;
+    background-color: #fae3cb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    border-left: 2px solid #8e44ad;
+  }
+  
+  .welcome {
+    font-size: 28px;
+    color: #000000;
+    margin-bottom: 30px;
+    font-family: 'Belina', serif;
+  }
+  
+  /* Form styles */
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 300px;
+  }
+  
+  .input-field {
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 2px solid #444;
+    border-radius: 30px;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  .forgot-password {
+    font-size: 12px;
+    color: #555;
+    text-align: right;
+    margin-bottom: 20px;
+    text-decoration: none;
+  }
+  
+  .btn {
+    padding: 12px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 15px;
+  }
+  
+  .login {
+    background-color: #00acc1;
+    color: white;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .signup {
+    background-color: #00acc1;
+    color: white;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+    
+    .left-side, .right-side {
+      flex: 1;
+      width: 100%;
+    }
+  
+    .right-side {
+      border-left: none;
+      border-top: 2px solid #8e44ad;
+    }
+  }
+  
